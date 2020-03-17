@@ -1,0 +1,8 @@
+<nav>
+  <button routerLink="pagina1">Página 1</button>
+  <input #parametro value="123" (keyup)="0" />
+  <button [routerLink]="'pagina2/' + parametro.value">Página 2</button>
+  <button routerLink="pagina3">Página 3</button>
+</nav>
+
+<router-outlet></router-outlet>
